@@ -17,3 +17,38 @@
 #     pass
 #
 # Put a comment noting which class is the base class
+class Vehicle:
+    """
+        Base class for all vehicles
+    """
+    pass
+
+
+class GroundVehicle(Vehicle):
+    """
+        Extends Vehicle and becomes the base for all ground vehicles
+    """
+    pass
+
+
+class Car(GroundVehicle):
+    pass
+
+
+class Motorcycle(GroundVehicle):
+    pass
+
+
+class FlightVehicle(Vehicle):
+    """
+        Extends Vehicle and becomes the base for all flying vehicles
+    """
+    pass
+
+
+class Airplane(FlightVehicle):
+    pass
+
+
+class Starship(FlightVehicle):
+    pass
